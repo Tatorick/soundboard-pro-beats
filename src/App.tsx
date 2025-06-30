@@ -7,6 +7,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { NavigationProvider } from "./contexts/NavigationContext";
 import Home from "./pages/Home";
 import VolleyballSounds from "./pages/VolleyballSounds";
+import BarSounds from "./pages/BarSounds";
+import NatureSounds from "./pages/NatureSounds";
+import SoundEffects from "./pages/SoundEffects";
 import Settings from "./pages/Settings";
 import BottomNavigation from "./components/BottomNavigation";
 import NotFound from "./pages/NotFound";
@@ -24,6 +27,9 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/volleyball-sounds" element={<VolleyballSounds />} />
+              <Route path="/bar-sounds" element={<BarSounds />} />
+              <Route path="/nature-sounds" element={<NatureSounds />} />
+              <Route path="/effects-sounds" element={<SoundEffects />} />
               <Route path="/settings" element={<Settings />} />
               <Route path="*" element={<NotFound />} />
             </Routes>

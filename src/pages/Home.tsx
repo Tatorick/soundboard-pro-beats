@@ -43,12 +43,7 @@ const Home = () => {
 
   const handleCategoryClick = (path: string) => {
     console.log(`Navigating to: ${path}`);
-    if (path === '/volleyball-sounds') {
-      navigate(path);
-    } else {
-      // Para categorías no implementadas aún, mostrar mensaje
-      alert('Esta categoría estará disponible pronto!');
-    }
+    navigate(path);
   };
 
   return (
